@@ -1,179 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Page 1</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
+img {
+  margin: center;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color:#FCF3CF;
-}
-
-/* Style the header */
-header {
-  background-color: orange;
-  color: black;
-  padding: 40px;
+.navbar {
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color:#3b9a40;
   text-align: center;
-  opacity: 1;
-  border-style: groove;
-  border-radius: 25px;
-  border-width: 5px;
-  border-color: Black;
-  border-radius: 10px;
-  margin: 20px;
-  box-shadow: 10px 10px 10px black;
-}
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: right;
-  width: 30%;
-  background: black;
+  word-spacing: 100px;
   padding: 10px;
-  width: 200px;
-  height: 100px;
-  border-style: groove;
-  border-radius: 25px;
-  border-width: 5px;
-  border-color: orange;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px orange;
 }
-nav a {color: blue}
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  color: black;
-  padding: 3%;
-  font-size: 2vw;
-  float: left;
-  margin:10px 10px 10px 20px;
-  padding: 20px;
-  width: 70%;
-  width: 400px;
-  height: 500px;
-  background-color: orange;
-  border-style: groove;
-  border-radius: 25px;
-  border-width: 5px;
-  border-color: Black;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px black;
-}
-article2 {
-  color: black;
-  padding: 3%;
-  font-size: 2vw;
-  float: left;
-  margin:10px 10px 10px 20px;
-  padding: 20px;
-  width: 70%;
-  width: 400px;
-  height: 500px;
-  background-color: orange;
-  border-style: groove;
-  border-radius: 25px;
-  border-width: 5px;
-  border-color: Black;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px black;
-}
-article3 {
-  color: black;
-  padding: 3%;
-  font-size: 2vw;
-  float: left;
-  margin:10px 10px 10px 20px;
-  padding: 20px;
-  width: 70%;
-  width: 400px;
-  height: 500px;
-  background-color: orange;
-  border-style: groove;
-  border-radius: 25px;
-  border-width: 5px;
-  border-color: Black;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px black;
-}
-/* Clear floats after the columns */
-section::after {
-  background-color: green;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  color: black;
-  background-color: orange;
-  padding: 10px;
+.a {
   text-align: center;
-  font-family: times new roman
-  border-style: groove;
-  border-radius: 25px;
-  border-width: 5px;
-  border-color: Black;
-  border-radius: 10px;
+}
+a:visited {
+  color: #000049;
+}
+a:link {
+  color: #00fe01;
+}
+a:hover {
+  color: yellow;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }{
-  background-color: orange;
-}
-}
 
+.headers {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.subs {
+  font-size: 17px;
+  font-family: times new roman;
+  font-weight: bold;
+    padding: 7px;
+  text-align: center;
+}
+.boxes {
+  width: 725px;
+  height: 200px;
+  border: 3px solid black;
+  padding: 7px;
+  text-align: center;
+  background-color: #3b9a40;
+}
+.footer {
+  border: 3px solid black;
+  padding: 7px;
+  text-align: center;
+  background-color: #3b9a40;
+}
+.box {
+}
+table, th, td {
+  text-align: center;
+}
 </style>
+<style>
+body {background-color: green ;}
+</style>
+    <title>Worldwide Adventure</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lucas Wibben">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+<!--Lucas Wibben 9/17/2021 -->
+<!--I took a lot of my layout design towards national geographic. I thought that the layout was very nice and simple and easy to work with. Im not going for like an exact replica of the website but something similar.-->
+<!--National Geographic: https://www.nationalgeographic.com/ -->
+<!--My intended audience is people looking for interesing articles or news or travel, I just want it to be sort of like and exploring kind of site with some other features -->
+<!-- Some goals I want for my website is for it to be fairly simple for it to use. I dont want too much on the screen, I just want a simple website with information. -->
+<!--Question 1: I chose this color scheme since it was sort of like a desert type of feeling color which was what I was going for -->
+<!--Question 2: these are the hexa values for my colors #FCF3CF #E6BF25 -->
+<!--Question 3: Im only using 2 colors as of now, most likely will change later when I can blend them better.-->
+<!--Question 4: I just went for a basic font (times new roman) this is my favorite font I just think it looks the cleanest out of all fonts so thats why I chose this font for everything. subject to change though -->
+<!--Question 5: Some text is bolded such as the headers and I have the text boxes just normal text. -->
 <body>
+<h1 style="text-align:center">Interesting Wildlife!</h1>
 
-<header>
-  <h2>About us</h2>
-</header>
 
+<div class="navbar">
+	<a href="file:///C:/Users/wiblucs/OneDrive%20-%20Dunwoody%20College%20of%20Technology/Documents/html1/index.html">Home</a>
+	<a href="file:///C:/Users/wiblucs/OneDrive%20-%20Dunwoody%20College%20of%20Technology/Documents/html1/travel.html">Travel</a>
+</div>
+
+<hr>
+
+<table>
+<td>
+	<div class="box">
+			<div class="headers">Endangered Elephants</div>
+			<img src="elephant.jpg" alt="Picture of elepahnt" width = "470" height="300"/>
+			<div class="subs">The Endangered Elephants</div>
+			<div class="boxes">
+			<p>Tigers have recently been on a rapid decline in population which caused them to be considered endangered. <br>
+			About a century ago their were around 100,000 tigers in all of asia, now, their are only around 3,900. 
+			This decline is a result of illegal hunting and trade of tigers.</p>
+			</div>
+	</div>
+</td>
+<td>
+	<div class="header2">
+			<div class="headers">Penguins of Antartica</div>
+			<img src="penguin.jpg" alt="Picture of Penguin" width = "470" height="300"/>
+			<div class="subs">Penguins</div>
+			<div class="boxes">
+			<p>
+			</p>
+			</div>
+	</div>
+</td>
+</div>
+
+</table>
 <section>
-  <nav>
-    <ul>
-      <li><a href="#"></a></li>
-      <li><a href="#"></a></li>
-      <li><a href="file:///C:/Users/wiblucs/OneDrive%20-%20Dunwoody%20College%20of%20Technology/Documents/html1/index.html">Back to home</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Article 1</h1>
-    <p>Insert Text here.</p>
-    <p>Insert Text Here.</p>
-  </article>
-  <article2>
-    <h1>Article 2</h1>
-    <p>Insert Text here.</p>
-    <p>Insert Text Here.</p>
-  </article2>
-  <article3>
-    <h1>Article 3</h1>
-    <p>Insert Text here.</p>
-    <p>Insert Text Here.</p>
-  </article3>
-</section>
-
-<footer>
-  <p>Footer</p>
-</footer>
 
 </body>
 </html>
